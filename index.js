@@ -37,13 +37,13 @@
 // console.log(areAllFourSame("2", "2", "2", "2"))
 //5
 function areAllFourSameOrEqual(new1, new2, new3, new4) {
-  if (new1 && new2 === new3 && new4) {
+  if (new1 === new2 && new1 === new3 && new1 === new4) {
     return "equal"
   }
-  else if (new1 && new2 == new3 && new4) {
+  else if (new1 == new2 && new1 == new3 && new1 == new4) {
     return "same"
   }
   else
     return "null"
 }
-console.log(areAllFourSameOrEqual(true, false, 1, "1")) 
+console.log(areAllFourSameOrEqual("2", "2", "2", "2")) 
